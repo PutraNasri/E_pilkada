@@ -1,0 +1,336 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_empat"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.byonge.e_pilkada.Empat"
+    android:background="#FFF9C4">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorPrimary">
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="5dp">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:text=" KECAMATAN"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/textView10"
+                                android:textSize="18sp"
+                                android:textColor="#ffffff"
+                                android:layout_marginLeft="20dp"
+                                android:layout_marginRight="20dp"
+                                android:textStyle="normal|bold" />
+
+                            <TextView
+                                android:text="GAMPONG"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/text2"
+                                android:textSize="18sp"
+                                android:layout_alignParentTop="true"
+                                android:layout_toRightOf="@+id/textView10"
+                                android:layout_toEndOf="@+id/textView10"
+                                android:layout_marginLeft="20dp"
+                                android:textColor="#ffffff"
+                                android:layout_marginRight="20dp"
+                                android:textStyle="normal|bold" />
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp">
+
+                            <TextView
+                                android:text=" NO TPS"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/textView11"
+                                android:textSize="18sp"
+                                android:textColor="#ffffff"
+                                android:layout_marginLeft="20dp"
+                                android:layout_marginRight="20dp"
+                                android:textStyle="normal|bold" />
+
+                            <TextView
+                                android:text="0"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/text3"
+                                android:textSize="18sp"
+                                android:layout_alignParentTop="true"
+                                android:layout_toRightOf="@+id/textView11"
+                                android:layout_toEndOf="@+id/textView11"
+                                android:layout_marginLeft="20dp"
+                                android:textColor="#ffffff"
+                                android:layout_marginRight="20dp"
+                                android:textStyle="normal|bold" />
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp">
+
+                            <TextView
+                                android:text=" JUMLAH PEMILIH"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/textView8"
+                                android:textSize="18sp"
+                                android:textColor="#ffffff"
+                                android:layout_marginLeft="20dp"
+                                android:layout_marginRight="20dp"
+                                android:textStyle="normal|bold" />
+
+                            <TextView
+                                android:text="0"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/textView9"
+                                android:textSize="18sp"
+                                android:layout_alignParentTop="true"
+                                android:layout_toRightOf="@+id/textView8"
+                                android:layout_toEndOf="@+id/textView8"
+                                android:layout_marginLeft="20dp"
+                                android:textColor="#ffffff"
+                                android:layout_marginRight="20dp"
+                                android:textStyle="normal|bold" />
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp">
+
+                            <TextView
+                                android:text=" JUMLAH PEMILIH PEMULA"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/textView100"
+                                android:textSize="18sp"
+                                android:textColor="#ffffff"
+                                android:layout_marginLeft="20dp"
+                                android:layout_marginRight="20dp"
+                                android:textStyle="normal|bold" />
+
+                            <TextView
+                                android:text="0"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/textViewpemula"
+                                android:textSize="18sp"
+                                android:layout_alignParentTop="true"
+                                android:layout_toRightOf="@+id/textView100"
+                                android:layout_toEndOf="@+id/textView100"
+                                android:layout_marginLeft="20dp"
+                                android:textColor="#ffffff"
+                                android:layout_marginRight="20dp"
+                                android:textStyle="normal|bold" />
+
+                        </RelativeLayout>
+                    </LinearLayout>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp">
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp">
+
+                        <TextView
+                            android:text="*Jumlah Hadir"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/textView12"
+                            android:textStyle="normal|bold"
+                            android:textColor="#000000"
+                            android:textSize="12sp" />
+
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:inputType="number"
+                            android:ems="10"
+                            android:id="@+id/editTexthadir"
+                            android:hint="JUMLAH HADIR" />
+
+                        <TextView
+                            android:text="*Jumlah Kertas Suara"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/textView13"
+                            android:textStyle="normal|bold"
+                            android:textColor="#000000"
+                            android:textSize="12sp" />
+
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:ems="10"
+                            android:hint="JUMLAH KERTAS SUARA"
+                            android:id="@+id/editTextkertas"
+                            android:inputType="number" />
+
+                        <TextView
+                            android:text="*Jumlah Suara NO 1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/textView14"
+                            android:textStyle="normal|bold"
+                            android:textColor="#000000"
+                            android:textSize="12sp" />
+
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:ems="10"
+                            android:id="@+id/editTextno1"
+                            android:hint="JUMLAH SUARA NO 1"
+                            android:inputType="number" />
+
+                        <TextView
+                            android:text="*Jumlah Suara NO 2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/textView15"
+                            android:textStyle="normal|bold"
+                            android:textColor="#000000"
+                            android:textSize="12sp" />
+
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:ems="10"
+                            android:id="@+id/editTextno2"
+                            android:hint="JUMLAH SUARA NO 2"
+                            android:inputType="number" />
+
+                        <TextView
+                            android:text="*Jumlah Suara NO 3"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/textView16"
+                            android:textStyle="normal|bold"
+                            android:textColor="#000000"
+                            android:textSize="12sp" />
+
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:ems="10"
+                            android:id="@+id/editTextno3"
+                            android:hint="JUMLAH SUARA NO 3"
+                            android:inputType="number" />
+
+                        <TextView
+                            android:text="*Jumlah Suara RUSAK"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/textView17"
+                            android:textStyle="normal|bold"
+                            android:textColor="#000000"
+                            android:textSize="12sp" />
+
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:ems="10"
+                            android:id="@+id/editTextrusak"
+                            android:hint="JUMLAH SUARA RUSAK"
+                            android:inputType="number" />
+
+                        <TextView
+                            android:text="*Upload Foto"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/textView5"
+                            android:textSize="12sp"
+                            android:textColor="#000000"
+                            android:textStyle="normal|bold" />
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <ImageView
+                                android:id="@+id/ivImage1"
+                                android:layout_weight="1"
+                                android:layout_width="match_parent"
+                                android:onClick="foto1"
+                                android:layout_height="250dp" />
+
+                        </RelativeLayout>
+
+                        <TextView
+                            android:text="*Code Verifikasi"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/textView4"
+                            android:textSize="12sp"
+                            android:textColor="#000000"
+                            android:textStyle="normal|bold" />
+
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:ems="10"
+                            android:id="@+id/editTextcode"
+                            android:hint="CODE VERIFIKASI"
+                            android:inputType="number" />
+
+                        <Button
+                            android:text="kirim"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/button3"
+                            android:backgroundTint="#ff5722"
+                            android:textColor="#ffffff"
+                            android:onClick="send" />
+                    </LinearLayout>
+                </RelativeLayout>
+
+            </LinearLayout>
+        </ScrollView>
+
+    </RelativeLayout>
+
+</RelativeLayout>

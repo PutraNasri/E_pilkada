@@ -2,6 +2,9 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.byonge.e_pilkada">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -16,7 +19,10 @@
             </intent-filter>
         </activity>
         <activity android:name=".Login" />
-        <activity android:name=".pilih"></activity>
+        <activity android:name=".Dua" />
+        <activity android:name=".Tiga" />
+        <activity android:name=".Empat"
+            android:windowSoftInputMode="stateHidden"></activity>
     </application>
 
 </manifest>
