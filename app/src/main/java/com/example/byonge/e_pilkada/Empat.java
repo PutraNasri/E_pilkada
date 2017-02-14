@@ -149,7 +149,7 @@ public class Empat extends AppCompatActivity {
     }
 
     private void selectImage() {
-        final CharSequence[] items = { "Take Photo", "Choose from Library",
+        final CharSequence[] items = { "Take Photo","Choose from Library",
                 "Cancel" };
 
         android.app.AlertDialog.Builder builder = new android.app.AlertDialog.Builder(Empat.this);
@@ -160,12 +160,11 @@ public class Empat extends AppCompatActivity {
                 boolean result=Utility.checkPermission(Empat.this);
 
                 if (items[item].equals("Take Photo")) {
-                    userChoosenTask ="Take Photo";
+                    userChoosenTask="Take Photo";
                     if(result)
                         cameraIntent();
-
                 } else if (items[item].equals("Choose from Library")) {
-                    userChoosenTask ="Choose from Library";
+                    userChoosenTask="Choose from Library";
                     if(result)
                         galleryIntent();
 
@@ -243,8 +242,9 @@ public class Empat extends AppCompatActivity {
         //proses pengambilan string dari variabel
         ByteArrayOutputStream baos = new ByteArrayOutputStream();
         Bitmap bitmap = ((BitmapDrawable) ivImage.getDrawable()).getBitmap();
-        bitmap.compress(Bitmap.CompressFormat.PNG, 100, baos);
+        bitmap.compress(Bitmap.CompressFormat.JPEG, 90, baos);
         byte[] fotoo = baos.toByteArray();
+
 
         final String id = idd.toString().trim();
         final String satu = textsatu.getText().toString().trim();
@@ -267,26 +267,17 @@ public class Empat extends AppCompatActivity {
                 super.onPostExecute(s);
                 loading.dismiss();
                 Toast.makeText(Empat.this, s, Toast.LENGTH_LONG).show();
-                AlertDialog.Builder a_builder = new AlertDialog.Builder(Empat.this);
-                a_builder.setMessage("DATA SUARA TELAH TERKIRIM")
-                        .setCancelable(false)
-                        .setPositiveButton("OK", new DialogInterface.OnClickListener() {
-                            @Override
-                            public void onClick(DialogInterface dialog, int which) {
-                                dialog.cancel();
+
                                 Intent hasilIntent = new Intent(Empat.this, Utama.class);
                                 startActivity(hasilIntent);
                                 finish();
-                            }
-                        });
-                AlertDialog alert = a_builder.create();
-                alert.setTitle("Info");
-                alert.show();
+
             }
             @Override
             protected String doInBackground(Void... v) {
 
                 HashMap<String, String> params = new HashMap<>();
+                params.put(config.KEY_EMP_ID, id);
                 params.put(config.KEY_EMP_SATU, satu);
                 params.put(config.KEY_EMP_DUA, dua);
                 params.put(config.KEY_EMP_TIGA, tiga);
